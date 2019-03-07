@@ -24,7 +24,7 @@ describe('Safari - basics -', function () {
   let driver;
 
   describe('init', function () {
-    this.retries(3);
+    this.retries(0);
     afterEach(async function () {
       await deleteSession();
     });
@@ -366,7 +366,7 @@ describe('Safari - basics -', function () {
   });
 
   describe('safariIgnoreFraudWarning', function () {
-    this.retries(3);
+    this.retries(0);
 
     describe('false', function () {
       beforeEach(async function () {
